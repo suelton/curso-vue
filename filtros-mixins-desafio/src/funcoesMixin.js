@@ -1,0 +1,27 @@
+export default {
+    data() {
+        return {
+            frase: 'Essa é a frase que será usada nos desafios',
+        }
+    },
+    computed: {
+        // Exercício 3
+        espacosPorVirgula() {
+            return this.frase.replace(/ /g, ',');
+        },
+        tamanhoDasPalavras() {
+            return this.frase.split(' ').map(word => `${word} (${word.length})`).join(' ');
+        }
+    },
+    filters: {
+        // Exercício 1
+        espacosPorVirgula(value) {
+            return value.replace(/ /g, ',');
+        },
+        // Exercício 2
+        tamanhoDasPalavras(value) {
+            return value.split(' ').map(word => `${word} (${word.length})`).join(' ');
+        }
+    },
+
+}
