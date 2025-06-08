@@ -1,9 +1,4 @@
 export default {
-    data() {
-        return {
-            frase: 'Essa é a frase que será usada nos desafios',
-        }
-    },
     computed: {
         // Exercício 3
         espacosPorVirgula() {
