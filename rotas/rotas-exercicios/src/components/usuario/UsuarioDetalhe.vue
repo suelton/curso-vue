@@ -2,7 +2,10 @@
   <div class="usuario-detalhe">
     <h3>Detalhes do Usuário</h3>    
     <p><strong>Código:</strong> {{ id }}</p>    
-    <router-link :to="{name: 'editarUsuario', params: {id: $route.params.id}}" tag="button" primario>Editar</router-link>
+    <router-link 
+      :to="{name: 'editarUsuario', params: {id: $route.params.id},
+          query: {completo: true, lingua: 'pt-BR'},
+          hash: '#rodape' }" tag="button" primario>Editar</router-link>
   </div>
 </template>
 
